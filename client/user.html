@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Twixer | user page</title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/styles.css" rel="stylesheet">
+  </head>
+  <body>
+<div class="wrapper">
+    <div class="box">
+        <div class="row">
+
+            <!-- sidebar -->
+            <div class="column col-sm-3" id="sidebar">
+                <a class="logo" href="#">Twixer</a>
+                <ul class="nav">
+                    <li class="active"><a href="#new_tweet">Post new tweet</a>
+                    </li>
+                    <li><a href="#to_vote">Tweets to vote</a>
+                    </li>
+                    <li><a href="#voted">Tweets already voted</a>
+                    </li>                    
+                    <li><a href="#vote_tally">Tweets vote tally</a>
+                    </li>                    
+                    <li><a href="#timeline">Twitter timeline</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /sidebar -->
+          
+            <!-- main -->
+            <div class="column col-sm-9" id="main">
+                <div class="padding">
+                    <div class="full col-sm-9">
+                      
+                      <!-- content -->
+                      <div class="col-sm-12" id="new_tweet"> 
+                        <!-- header -->
+                        <div class="page-header">
+                          <h1>Welcome  <small><span id="username"></span></small></h1>
+                           <a class="btn btn-sm btn-primary btn-block" id="logout">Logout</a>
+                        </div>  
+                        <!-- End header -->
+
+                        <div class="page-header text-muted">
+                          Post new tweet
+                          </div> 
+                        </div> 
+                        <!--new tweet-->
+                        <div class="row">    
+                          <div class="col-sm-10">
+                            <div class="row">
+                            <div class="col-lg-6">
+                              <div class="input-group">
+                                <input type="text" class="form-control" id="tweet" placeholder="New tweet...">
+                                <span class="input-group-btn">
+                                  <button class="btn btn-default" id="submit" type="button">Post</button>
+                                </span>
+                              </div><!-- /input-group -->
+                            </div><!-- /.col-lg-6 -->
+                          </div><!-- /.row -->
+                          </div>
+                        </div>
+                        
+                        <div class="col-sm-12" id="to_vote">  
+                          <div class="page-header text-muted divider">
+                            Tweets to vote
+                          </div>
+                        </div>
+                        
+                        <!--Tweets to vote-->
+                        <div class="row">    
+                          <div class="col-sm-12">
+                            <div class="vote-queue"></div>
+                        </div>
+                        </div>
+                        <!--/Tweets to vote-->
+                        
+                        <div class="col-sm-12" id="voted">  
+                          <div class="page-header text-muted divider">
+                            Tweets already voted
+                          </div>
+                        </div>
+                        
+                        <!--Voted tweets-->
+                        <div class="row">    
+                          <div class="col-sm-10">
+                            <div class="voted"></div>
+                          </div>
+                        </div>
+                        <!--/Voted tweets-->
+
+                         <div class="col-sm-12" id="vote_tally">  
+                          <div class="page-header text-muted divider">
+                            Tweets vote tally
+                          </div>
+                        </div>
+                        
+                        <!--vote tally-->
+                        <div class="row">    
+                          <div class="col-sm-10">
+                           <div class="tweets"></div>
+                          </div>
+                        </div>
+                        <!--/vote tally-->
+
+
+                        <div class="col-sm-12" id="timeline">  
+                          <div class="page-header text-muted divider">
+                            Twitter timeline
+                          </div>
+                        </div>
+                        
+                        <!--Twitter timeline-->
+                        <div class="row">    
+                          <div class="col-sm-10">
+                           <a class="twitter-timeline" 
+                              href="https://twitter.com/cpsc_473"
+                              data-widget-id="578676005914550272">
+                              Tweets by @CPSC_473
+                              </a>
+                              <script>window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));</script>
+                          </div>
+                        </div>
+                        <!--/Twitter timeline-->
+                      
+                        
+                        <hr>
+                      
+                        <div class="row" id="footer">    
+                          <div class="col-sm-6">
+                            
+                          </div>
+                          <div class="col-sm-6">
+                            <p>
+                            <a href="#" class="pull-right">©Copyright</a>
+                            </p>
+                          </div>
+                        </div>
+                                        
+                      <hr>
+                        
+                      
+                    </div><!-- /col-9 -->
+                </div><!-- /padding -->
+            </div>
+            <!-- /main -->
+        </div>
+    </div>
+</div>
+  <!-- script references -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="javascripts/app.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+  </body>
+</html>

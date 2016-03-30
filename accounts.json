@@ -1,0 +1,22 @@
+{
+    "accounts" :[
+        {
+            "user": "acct1@mail.com",
+            "pass": "pass1",
+            "voted": [],
+            "toVote": []
+        },
+        {
+            "user": "acct2@mail.com",
+            "pass": "pass2",
+            "voted": [],
+            "toVote": []
+        },
+        {
+            "user": "acct3@mail.com",
+            "pass": "pass3",
+            "voted": [],
+            "toVote": []
+        }
+    ]
+}
